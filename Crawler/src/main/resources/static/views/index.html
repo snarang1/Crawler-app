@@ -13,14 +13,15 @@
     </div>
     <hr/>
    
- <table .table .table-bordered .table-striped>
- <tr ng-repeat="(key, value) in result">
- <th width="100" rowspan={{value.length + 1}}>
+ <table .table .table-bordered .table-striped cellpadding="10px">
+ 
+ <tr style="border: 1px solid black" ng-repeat="(key, value) in result">
+ <td style="border: 1px solid black" rowspan={{value.length + 1}}>
 {{key}}
  </td>
- <td >
+ <td>
    <li ng-repeat="v in value">
-           {{v}}
+         &nbsp;{{v}}
     </li>
  </td>
  
