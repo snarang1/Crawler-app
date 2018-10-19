@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+</head>
+<body ng-app="demo">
+<hr/>
+<div class="container" ng-controller="MyController">
+    <div class="row">
+        <label>Url</label> <input type="text" ng-model="url" />
+        <button ng-click="getResults()" class="btn btn-sm btn-info">Get Results</button>
+    </div>
+    <hr/>
+   
+ <table .table .table-bordered .table-striped>
+ <tr ng-repeat="(key, value) in result">
+ <th width="100" rowspan={{value.length + 1}}>
+{{key}}
+ </td>
+ <td >
+   <li ng-repeat="v in value">
+           {{v}}
+    </li>
+ </td>
+ 
+ </tr>
+ 
+ </table>
+
+</body>
+<script src="/lib/angular.min.js"></script>
+
+<script src= "/js/app.js"></script>
+<script src="/js/MyController.js"></script>
+<script src="/js/MyService.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+</html>
